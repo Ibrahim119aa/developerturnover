@@ -1,0 +1,328 @@
+{
+    "version": "0.4",
+    "title": "404",
+    "type": "page",
+    "metadata": {
+        "template_type": "single-page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_header_footer"
+    },
+    "content": [
+        {
+            "id": "2dc92397",
+            "settings": {
+                "background_background": "classic",
+                "background_image": {
+                    "id": 22,
+                    "url": "https:\/\/kitpro.site\/lessan\/wp-content\/uploads\/sites\/159\/2023\/04\/2-copy.jpg",
+                    "alt": "",
+                    "source": "library",
+                    "size": ""
+                },
+                "background_position": "center center",
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_opacity": {
+                    "unit": "px",
+                    "size": 0.54,
+                    "sizes": []
+                },
+                "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": 0,
+                    "bottom": "0",
+                    "left": 0,
+                    "isLinked": false
+                },
+                "padding": {
+                    "unit": "px",
+                    "top": "200",
+                    "right": "0",
+                    "bottom": "100",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "__globals__": {
+                    "background_color": "globals\/colors?id=50714e7",
+                    "background_overlay_color": "globals\/colors?id=5425a2a"
+                },
+                "padding_mobile": {
+                    "unit": "px",
+                    "top": "200",
+                    "right": "20",
+                    "bottom": "100",
+                    "left": "20",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "16954854",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null,
+                        "align": "center",
+                        "margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "2553bfae",
+                            "settings": {
+                                "image": {
+                                    "id": 581,
+                                    "url": "https:\/\/kitpro.site\/lessan\/wp-content\/uploads\/sites\/159\/2023\/04\/edge3.png",
+                                    "alt": "",
+                                    "source": "library",
+                                    "size": ""
+                                },
+                                "_element_width": "initial",
+                                "_element_width_mobile": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 11.472
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "px",
+                                    "size": 80.467
+                                },
+                                "_position": "absolute",
+                                "_offset_x": {
+                                    "size": 295,
+                                    "unit": "px"
+                                },
+                                "_offset_x_tablet": {
+                                    "size": 123,
+                                    "unit": "px"
+                                },
+                                "_offset_x_mobile": {
+                                    "size": -8,
+                                    "unit": "px"
+                                },
+                                "_offset_y": {
+                                    "size": 238,
+                                    "unit": "px"
+                                },
+                                "_offset_y_tablet": {
+                                    "size": 204,
+                                    "unit": "px"
+                                },
+                                "_offset_y_mobile": {
+                                    "size": 243,
+                                    "unit": "px"
+                                },
+                                "_z_index": 1,
+                                "jkit_transform_rotate": {
+                                    "unit": "px",
+                                    "size": 0,
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "7c3572e8",
+                            "settings": {
+                                "image": {
+                                    "id": 121,
+                                    "url": "https:\/\/kitpro.site\/lessan\/wp-content\/uploads\/sites\/159\/2023\/04\/c1.png",
+                                    "alt": "",
+                                    "source": "library",
+                                    "size": ""
+                                },
+                                "_element_width": "initial",
+                                "_element_width_mobile": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 3.749
+                                },
+                                "_element_custom_width_mobile": {
+                                    "unit": "px",
+                                    "size": 21.85
+                                },
+                                "_position": "absolute",
+                                "_offset_x": {
+                                    "size": 864,
+                                    "unit": "px"
+                                },
+                                "_offset_x_tablet": {
+                                    "size": 164,
+                                    "unit": "px"
+                                },
+                                "_offset_x_mobile": {
+                                    "size": 11,
+                                    "unit": "px"
+                                },
+                                "_offset_y": {
+                                    "size": 77,
+                                    "unit": "px"
+                                },
+                                "_offset_y_tablet": {
+                                    "size": 71,
+                                    "unit": "px"
+                                },
+                                "_offset_y_mobile": {
+                                    "size": 124,
+                                    "unit": "px"
+                                },
+                                "_z_index": 1,
+                                "jkit_transform_rotate": {
+                                    "unit": "px",
+                                    "size": 174,
+                                    "sizes": []
+                                },
+                                "_element_width_tablet": "initial",
+                                "_element_custom_width_tablet": {
+                                    "unit": "px",
+                                    "size": 53.15
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "1249a75d",
+                            "settings": {
+                                "image": {
+                                    "id": 123,
+                                    "url": "https:\/\/kitpro.site\/lessan\/wp-content\/uploads\/sites\/159\/2023\/04\/c3.png",
+                                    "alt": "",
+                                    "source": "library",
+                                    "size": ""
+                                },
+                                "_element_width": "initial",
+                                "_element_custom_width": {
+                                    "unit": "%",
+                                    "size": 12.008
+                                },
+                                "_position": "absolute",
+                                "_offset_x": {
+                                    "size": 877,
+                                    "unit": "px"
+                                },
+                                "_offset_x_tablet": {
+                                    "size": 530,
+                                    "unit": "px"
+                                },
+                                "_offset_x_mobile": {
+                                    "size": 266,
+                                    "unit": "px"
+                                },
+                                "_offset_y": {
+                                    "size": -79,
+                                    "unit": "px"
+                                },
+                                "_offset_y_tablet": {
+                                    "size": -46,
+                                    "unit": "px"
+                                },
+                                "_offset_y_mobile": {
+                                    "size": -34,
+                                    "unit": "px"
+                                },
+                                "_z_index": 1,
+                                "jkit_transform_rotate": {
+                                    "unit": "px",
+                                    "size": 228,
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "53b2e45d",
+                            "settings": {
+                                "title": "404",
+                                "header_size": "h1",
+                                "align": "center",
+                                "__globals__": {
+                                    "typography_typography": "globals\/typography?id=6e144d7",
+                                    "title_color": "globals\/colors?id=secondary"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "6f6cadd9",
+                            "settings": {
+                                "title": "Something Is Wrong",
+                                "align": "center",
+                                "_margin": {
+                                    "unit": "px",
+                                    "top": "-15",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=secondary"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "22c950f6",
+                            "settings": {
+                                "editor": "<p>The Page You\u2019re Looking For Was Not Found<\/p>",
+                                "align": "center",
+                                "__globals__": {
+                                    "text_color": "globals\/colors?id=secondary"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "42041082",
+                            "settings": {
+                                "text": "Go Back",
+                                "align": "center"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "button",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ]
+}
