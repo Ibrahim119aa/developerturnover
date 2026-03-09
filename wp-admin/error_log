@@ -1,1 +1,0 @@
-[13-Feb-2026 19:29:53 UTC] PHP Warning:  Attempt to read property "title" on null in /home/designvista/public_html/developerturnover/wp-includes/class-wp-customize-widgets.php on line 926
