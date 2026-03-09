@@ -11,6 +11,8 @@ const Header = () => {
                         <Image src={"/images/logo.png"} className="w-[52%] rounded-[10px] inline-block align-middle max-w-full h-auto" alt="Logo" width={100} height={100} />
                     </div>
                 </div>
+
+                
                 <div className="flex flex-col justify-center w-full md:w-[55%]">
                     <div className="relative max-w-full min-w-0 mb-0 flex flex-col gap-5">
                         <div className="h-full transition-all duration-300 box-border ">
