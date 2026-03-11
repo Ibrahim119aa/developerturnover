@@ -12,7 +12,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                
+
                 <div className="flex flex-col justify-center w-full md:w-[55%]">
                     <div className="relative max-w-full min-w-0 mb-0 flex flex-col gap-5">
                         <div className="h-full transition-all duration-300 box-border ">

@@ -23,6 +23,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 @layer components {
   .header-layout {
     @apply flex flex-row grow shrink flex-wrap items-center justify-center content-center gap-4 h-full w-full max-w-screen-xl mx-auto;
