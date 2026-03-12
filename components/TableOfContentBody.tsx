@@ -110,31 +110,29 @@ const tocRows: TocRow[] = [
 
 const TableOfContentBody = () => {
     return (
-        <div className="bg-[#B4D6E3] pt-[50px] pr-[50px] pb-[50px] pl-0 transition-[background,border,border-radius,box-shadow] duration-300 relative">
-
-            <div className="absolute inset-0 opacity-70 transition-[background,border-radius,opacity] duration-300"></div>
+        <div className="bg-[#B4D6E3] pt-6 sm:pt-8 md:pt-[50px] pr-4 sm:pr-6 md:pr-[50px] pb-6 sm:pb-8 md:pb-[50px] pl-4 sm:pl-6 md:pl-[75px] transition-[background,border,border-radius,box-shadow] duration-300 relative">
+            <div className="absolute inset-0 opacity-70 transition-[background,border-radius,opacity] duration-300" />
             <div className="max-w-[1586px] flex mx-auto relative box-border">
-                <div className="flex relative min-h-[1px] w-full md:w-full transition-all duration-300 box-border">
-                    <div className="m-0 pl-[75px] p-[10px] flex flex-wrap content-start w-full relative box-border">
-                        <div className={`${montserrat.className} w-full relative text-[19px] text-black transition-all duration-300`} >
+                <div className="flex relative min-h-[1px] w-full transition-all duration-300 box-border overflow-x-auto">
+                    <div className="m-0 p-2 sm:p-[10px] flex flex-wrap content-start w-full min-w-0 relative box-border">
+                        <div className={`${montserrat.className} w-full relative text-sm sm:text-base md:text-[19px] text-black transition-all duration-300 min-w-[280px]`}>
                             <table className="w-full border-collapse text-[0.9em] borde-4 border-[#80808012]">
                                 <thead className="bg-transparent">
                                     <tr>
-                                        <th className="text-center border-2 border-[#80808012] p-4">Sr. No.</th>
-                                        <th className="text-center border-2 border-[#80808012] p-4">Section Title</th>
-                                        <th className="text-center border-2 border-[#80808012] p-4">Page No.</th>
+                                        <th className="text-center border-2 border-[#80808012] p-2 sm:p-4 whitespace-nowrap">Sr. No.</th>
+                                        <th className="text-center border-2 border-[#80808012] p-2 sm:p-4">Section Title</th>
+                                        <th className="text-center border-2 border-[#80808012] p-2 sm:p-4 whitespace-nowrap">Page No.</th>
                                     </tr>
                                 </thead>
-
                                 <tbody className="align-middle">
                                     {tocRows.map((row, index) => (
                                         <tr
                                             key={row.sr}
                                             className={index % 2 === 0 ? "hover:bg-[#80808012] cursor-pointer odd:bg-transparent even:bg-[#76636300]" : "hover:bg-[#80808012] cursor-pointer odd:bg-transparent even:bg-[#80808012]"}
                                         >
-                                            <td className="border border-[#80808012] p-4 text-center">{row.sr}</td>
-                                            <td className="border border-[#80808012] p-4">{row.title}</td>
-                                            <td className="border border-[#80808012] p-4 text-center">{row.page}</td>
+                                            <td className="border border-[#80808012] p-2 sm:p-4 text-center whitespace-nowrap">{row.sr}</td>
+                                            <td className="border border-[#80808012] p-2 sm:p-4">{row.title}</td>
+                                            <td className="border border-[#80808012] p-2 sm:p-4 text-center whitespace-nowrap">{row.page}</td>
                                         </tr>
                                     ))}
                                 </tbody>

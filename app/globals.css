@@ -27,6 +27,14 @@ body {
 
 @layer components {
   .header-layout {
-    @apply flex flex-row grow shrink flex-wrap items-center justify-center content-center gap-4 h-full w-full max-w-screen-xl mx-auto;
+    @apply flex flex-row grow shrink flex-wrap items-center justify-center content-center gap-4 h-full w-full max-w-screen-xl mx-auto px-2 sm:px-4;
   }
+}
+
+/* Prevent horizontal overflow on small screens */
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
