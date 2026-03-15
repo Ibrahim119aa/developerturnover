@@ -110,18 +110,18 @@ const tocRows: TocRow[] = [
 
 const TableOfContentBody = () => {
     return (
-        <div className="bg-[#B4D6E3] pt-6 sm:pt-8 md:pt-[50px] pr-4 sm:pr-6 md:pr-[50px] pb-6 sm:pb-8 md:pb-[50px] pl-4 sm:pl-6 md:pl-[75px] transition-[background,border,border-radius,box-shadow] duration-300 relative">
+        <div className="bg-[#B4D6E3] pt-6 sm:pt-8 md:pt-[50px] pr-4 sm:pr-6 md:pr-[50px] pb-6 sm:pb-8 md:pb-[50px] pl-4 sm:pl-6 md:pl-[75px] transition-[background,border,border-radius,box-shadow] duration-300 relative overflow-x-hidden">
             <div className="absolute inset-0 opacity-70 transition-[background,border-radius,opacity] duration-300" />
-            <div className="max-w-[1586px] flex mx-auto relative box-border">
-                <div className="flex relative min-h-[1px] w-full transition-all duration-300 box-border overflow-x-auto">
+            <div className="max-w-[1586px] flex mx-auto relative box-border" data-aos="fade-up">
+                <div className="flex relative min-h-[1px] w-full transition-all duration-300 box-border overflow-x-auto -mx-2 sm:mx-0">
                     <div className="m-0 p-2 sm:p-[10px] flex flex-wrap content-start w-full min-w-0 relative box-border">
-                        <div className={`${montserrat.className} w-full relative text-sm sm:text-base md:text-[19px] text-black transition-all duration-300 min-w-[280px]`}>
-                            <table className="w-full border-collapse text-[0.9em] borde-4 border-[#80808012]">
+                        <div className={`${montserrat.className} w-full relative text-xs sm:text-sm md:text-base lg:text-[19px] text-black transition-all duration-300 min-w-0`}>
+                            <table className="w-full border-collapse text-[0.85em] sm:text-[0.9em] border-4 border-[#80808012]">
                                 <thead className="bg-transparent">
                                     <tr>
-                                        <th className="text-center border-2 border-[#80808012] p-2 sm:p-4 whitespace-nowrap">Sr. No.</th>
-                                        <th className="text-center border-2 border-[#80808012] p-2 sm:p-4">Section Title</th>
-                                        <th className="text-center border-2 border-[#80808012] p-2 sm:p-4 whitespace-nowrap">Page No.</th>
+                                        <th className="text-center border-2 border-[#80808012] p-1.5 sm:p-3 md:p-4 whitespace-nowrap">Sr. No.</th>
+                                        <th className="text-center border-2 border-[#80808012] p-1.5 sm:p-3 md:p-4">Section Title</th>
+                                        <th className="text-center border-2 border-[#80808012] p-1.5 sm:p-3 md:p-4 whitespace-nowrap">Page No.</th>
                                     </tr>
                                 </thead>
                                 <tbody className="align-middle">
@@ -130,9 +130,9 @@ const TableOfContentBody = () => {
                                             key={row.sr}
                                             className={index % 2 === 0 ? "hover:bg-[#80808012] cursor-pointer odd:bg-transparent even:bg-[#76636300]" : "hover:bg-[#80808012] cursor-pointer odd:bg-transparent even:bg-[#80808012]"}
                                         >
-                                            <td className="border border-[#80808012] p-2 sm:p-4 text-center whitespace-nowrap">{row.sr}</td>
-                                            <td className="border border-[#80808012] p-2 sm:p-4">{row.title}</td>
-                                            <td className="border border-[#80808012] p-2 sm:p-4 text-center whitespace-nowrap">{row.page}</td>
+                                            <td className="border border-[#80808012] p-1.5 sm:p-3 md:p-4 text-center whitespace-nowrap">{row.sr}</td>
+                                            <td className="border border-[#80808012] p-1.5 sm:p-3 md:p-4 break-words">{row.title}</td>
+                                            <td className="border border-[#80808012] p-1.5 sm:p-3 md:p-4 text-center whitespace-nowrap">{row.page}</td>
                                         </tr>
                                     ))}
                                 </tbody>

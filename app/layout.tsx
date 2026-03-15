@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { lazy, memo } from "react";
+import AOSProvider from "@/components/AOSProvider";
 const Header = memo(lazy(() => import("@/components/Header")));
 const Footer = memo(lazy(() => import("@/components/Footer")));
 
@@ -31,7 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        {children}
+        <AOSProvider>{children}</AOSProvider>
         <Footer />
       </body>
     </html>

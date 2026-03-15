@@ -4,8 +4,8 @@ import { memo } from "react"
 
 const ContactForm = () => {
     return (
-        <div className="bg-[#12123C] rounded-xl p-5 sm:p-6 md:p-8 lg:p-10 ">
-            <h2 className="text-white font-bold text-2xl sm:text-3xl md:text-4xl mb-5 md:mb-6">Contact Now</h2>
+        <div className="bg-[#12123C] rounded-xl p-4 sm:p-6 md:p-8 lg:p-10 w-full max-w-full min-w-0">
+            <h2 className="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-5 md:mb-6">Contact Now</h2>
             <form className="space-y-4 md:space-y-5" onSubmit={(e) => e.preventDefault()}>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <input

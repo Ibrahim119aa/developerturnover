@@ -1,16 +1,20 @@
 import React, { lazy } from 'react';
 
-const Hero = lazy(() => import("@/components/Hero"));
-const AuthorBody = lazy(() => import("@/components/AuthorBody"));
+const HomeHero = lazy(() => import("@/components/HomePageHero"));
+const AboutAuthor = lazy(() => import("@/components/AboutAuthor"));
+const HomePageAboutTheAuthor = lazy(() => import("@/components/HomePageAboutTheAuthor"));
+const HomePageContactUs = lazy(() => import("@/components/HomePageContactUs"));
+
 
 
 
 const Home = () => {
   return (
     <div>
-
-      <Hero title={"About The Author"} />
-      <AuthorBody />
+      <HomeHero />
+      <HomePageAboutTheAuthor />
+      <AboutAuthor />
+      <HomePageContactUs />
 
     </div>
   )

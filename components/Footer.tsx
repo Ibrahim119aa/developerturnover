@@ -3,10 +3,10 @@ import Link from "next/link";
 import React from "react";
 const Footer = () => {
     return (
-        <footer className="box-border">
+        <footer className="box-border w-full overflow-x-hidden">
             <div className="relative bg-[#06018F] pt-10 sm:pt-14 md:pt-[100px] pb-8 md:pb-[50px] px-4 sm:px-6 md:px-8 transition-all duration-300">
                 <div className="mx-auto max-w-[1280px]">
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 md:gap-8 py-6 md:py-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 md:gap-8 py-6 md:py-10" data-aos="fade-up">
                         {/* Logo */}
                         <div className="flex justify-center sm:justify-start">
                             <div className="flex flex-col gap-5">
