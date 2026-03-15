@@ -4,37 +4,16 @@ import { memo } from "react"
 
 const ContactForm = () => {
     return (
-        <div className="bg-[#12123C] rounded-xl p-4 sm:p-6 md:p-8 lg:p-10 w-full max-w-full min-w-0">
-            <h2 className="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-5 md:mb-6">Contact Now</h2>
+        <div className="form-card">
+            <h2 className="form-title">Contact Now</h2>
             <form className="space-y-4 md:space-y-5" onSubmit={(e) => e.preventDefault()}>
-                <div className="flex flex-col sm:flex-row gap-4">
-                    <input
-                        type="text"
-                        placeholder="First Name"
-                        className="flex-1 bg-white rounded-lg py-3 px-4 placeholder:text-gray-500 text-gray-900 outline-none focus:ring-2 focus:ring-cyan-400/50"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Last Name"
-                        className="flex-1 bg-white rounded-lg py-3 px-4 placeholder:text-gray-500 text-gray-900 outline-none focus:ring-2 focus:ring-cyan-400/50"
-                    />
+                <div className="form-input-row">
+                    <input type="text" placeholder="First Name" className="form-input flex-1" />
+                    <input type="text" placeholder="Last Name" className="form-input flex-1" />
                 </div>
-                <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full bg-white rounded-lg py-3 px-4 placeholder:text-gray-500 text-gray-900 outline-none focus:ring-2 focus:ring-cyan-400/50"
-                />
-                <textarea
-                    placeholder="Message"
-                    rows={4}
-                    className="w-full bg-white rounded-lg py-3 px-4 placeholder:text-gray-500 text-gray-900 outline-none focus:ring-2 focus:ring-cyan-400/50 resize-none"
-                />
-                <button
-                    type="submit"
-                    className="w-full bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-3 rounded-lg transition-colors"
-                >
-                    Send
-                </button>
+                <input type="email" placeholder="Email" className="form-input" />
+                <textarea placeholder="Message" rows={4} className="form-input resize-none" />
+                <button type="submit" className="btn-submit">Send</button>
             </form>
         </div>
 

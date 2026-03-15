@@ -20,6 +20,16 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Project structure (production-ready)
+
+- **`app/`** – Next.js App Router: `layout.tsx`, `page.tsx`, `globals.css`, and route folders (`about-the-author`, `about-the-book`, `contact-now`, `table-of-contents`).
+- **`app/globals.css`** – Design tokens (`:root` CSS variables for colors/shadows), base styles, and **`@layer components`** with reusable Tailwind-based classes (e.g. `container-section`, `section-padding`, `hero-heading`, `btn-primary`, `btn-cta`, `form-card`, `footer-link`, `toc-wrapper`). Long or repeated utility strings are centralized here.
+- **`components/`** – UI components (Header, Footer, Hero, HomePageHero, AboutAuthor, ContactUsForm, etc.). Components use the custom layer classes from `globals.css` instead of long inline Tailwind strings.
+- **`constants/site.ts`** – Site-wide constants: `NAV_LINKS`, `CONTACT_EMAIL`, `AMAZON_BOOK_URL`. Single source for nav and external links.
+- **`types/`** – TypeScript declarations (e.g. `aos.d.ts` for AOS).
+
+To add new reusable UI patterns, extend `@layer components` in `app/globals.css` and use the new class names in components.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

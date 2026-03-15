@@ -3,13 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useCallback, useEffect } from "react";
-
-const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/about-the-author", label: "About The Author" },
-  { href: "/table-of-contents", label: "Table Of Contents" },
-  { href: "/about-the-book", label: "About The Book" },
-];
+import { NAV_LINKS } from "@/constants/site";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,11 +16,6 @@ const Header = () => {
       document.body.style.overflow = "";
     };
   }, [menuOpen]);
-
-  const linkBase =
-    "flex items-center min-h-[44px] px-2 sm:px-5 text-sm sm:text-base md:text-[18px] font-semibold text-[#0E113C] font-montserrat transition-all duration-400 no-underline hover:opacity-80";
-  const ctaClass =
-    "inline-block bg-[#2FCCD6] text-white text-sm sm:text-[1rem] font-medium px-6 py-3 sm:px-8 sm:py-4 shadow-[-7px_9px_7px_rgba(0,0,0,0.21)] rounded-none hover:text-white focus:text-white transition-all duration-300";
 
   return (
     <header className="sticky top-0 z-[9999] bg-white border-b border-gray-200/80 md:border-0 md:static md:bg-transparent">
@@ -51,7 +40,7 @@ const Header = () => {
               <ul className="flex h-full justify-start items-center list-none p-0 m-0 gap-0">
                 {NAV_LINKS.map(({ href, label }) => (
                   <li key={href} className="relative list-none m-0 p-0">
-                    <Link href={href} className={`${linkBase} px-5`}>
+                    <Link href={href} className="nav-link px-5">
                       {label}
                     </Link>
                   </li>
@@ -63,7 +52,7 @@ const Header = () => {
           {/* Desktop CTA - hidden below md */}
           <div className="hidden md:flex flex-col justify-center md:w-[15%]">
             <div className="text-center">
-              <Link href="/contact-now" className={ctaClass}>
+              <Link href="/contact-now" className="btn-cta-header">
                 Contact Now
               </Link>
             </div>
@@ -77,7 +66,7 @@ const Header = () => {
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
               onClick={() => setMenuOpen((prev) => !prev)}
-              className="p-3 -mr-2 rounded-lg text-[#0E113C] hover:bg-gray-100 active:bg-gray-200 transition-colors touch-manipulation"
+              className="p-3 -mr-2 rounded-lg text-[var(--color-primary)] hover:bg-gray-100 active:bg-gray-200 transition-colors touch-manipulation"
             >
               <span className="sr-only">{menuOpen ? "Close menu" : "Open menu"}</span>
               <svg
@@ -129,12 +118,12 @@ const Header = () => {
           }`}
         >
           <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
-            <span className="text-[#0E113C] font-semibold text-lg">Menu</span>
+            <span className="text-[var(--color-primary)] font-semibold text-lg">Menu</span>
             <button
               type="button"
               aria-label="Close menu"
               onClick={closeMenu}
-              className="p-2.5 rounded-lg text-[#0E113C] hover:bg-gray-100 active:bg-gray-200"
+              className="p-2.5 rounded-lg text-[var(--color-primary)] hover:bg-gray-100 active:bg-gray-200"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <line x1="18" y1="6" x2="6" y2="18" />
@@ -149,7 +138,7 @@ const Header = () => {
                   <Link
                     href={href}
                     onClick={closeMenu}
-                    className="flex items-center min-h-[48px] py-3 px-5 text-[#0E113C] font-semibold text-base no-underline hover:bg-gray-50 active:bg-gray-100 -mx-1 rounded-none transition-colors"
+                    className="nav-link-mobile -mx-1"
                   >
                     {label}
                   </Link>
@@ -160,7 +149,7 @@ const Header = () => {
               <Link
                 href="/contact-now"
                 onClick={closeMenu}
-                className={`flex items-center justify-center min-h-[48px] w-full ${ctaClass} rounded-lg`}
+                className="flex items-center justify-center min-h-[48px] w-full btn-cta-header rounded-lg"
               >
                 Contact Now
               </Link>
